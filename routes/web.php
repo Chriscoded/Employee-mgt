@@ -114,7 +114,7 @@ Route::group(['middleware' => 'auth'], function (){
     Route::get('managesalary/salarylist', [ManagesalaryController::class, 'salarylist'])->name('managesalary.salarylist');
     Route::get('managesalary/makepayment', [ManagesalaryController::class, 'makepayment'])->name('managesalary.makepayment');
     Route::post('managesalary/make-advance', [ManagesalaryController::class, 'make-advance'])->name('managesalary.make-advance');
-//    Route::post('managesalary/search',            [ 'as'=>'managesalary.search',               'uses' => 'ManagesalaryController@search']);
+    //    Route::post('managesalary/search',            [ 'as'=>'managesalary.search',               'uses' => 'ManagesalaryController@search']);
 
     Route::get('event', [EventController::class, 'event'])->name('event');
     Route::post('event/store', [EventController::class, 'store'])->name('event.store');
