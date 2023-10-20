@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Department;
+use App\Models\Department;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;
 use Gate;

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Totalleave;
+use App\Models\Totalleave;
 use Illuminate\Http\Request;
 
 class TotalleaveController extends Controller

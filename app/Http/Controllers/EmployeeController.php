@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\City;
-use App\Employee;
-use App\Salary;
+use App\Models\City;
+use App\Models\Employee;
+use App\Models\Salary;
 use Gate;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;

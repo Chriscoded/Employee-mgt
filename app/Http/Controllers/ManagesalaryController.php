@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Brian2694\Toastr\Facades\Toastr;
-use App\Advancepayment;
-use App\Designation;
-use App\Managesalary;
-use App\Salary;
-use App\User;
-use App\Leave;
+use App\Models\Advancepayment;
+use App\Models\Designation;
+use App\Models\Managesalary;
+use App\Models\Salary;
+use App\Models\User;
+use App\Models\Leave;
 use function foo\func;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

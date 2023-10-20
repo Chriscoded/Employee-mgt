@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Models\User;
+use App\Models\Leave;
+use Carbon\Carbon;
 
 class DashboardController extends Controller
 {
@@ -14,8 +16,10 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $users = User::paginate(10);
-        return view('admin.dashboard.index',compact('users'));
+        $users = User::get();
+        $leave = Leave::get();
+        $leave = Leave::get();
+        return view('admin.dashboard.index',compact('users','leave'));
     }
 
     /**

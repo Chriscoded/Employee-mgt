@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Designation;
-use App\User;
+use App\Models\Designation;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Gate;
 use Brian2694\Toastr\Facades\Toastr;
