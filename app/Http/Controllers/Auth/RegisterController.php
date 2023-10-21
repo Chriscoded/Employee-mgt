@@ -50,9 +50,19 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'username' => ['required', 'string', 'max:255'],
+            'first_name' => ['required'],
+            'last_name' => ['required'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password' => ['required'],
+            'phone' => ['required'],
+            'address' => ['required'],
+            'gender' => ['required'],
+            'dob' => ['required'],
+            'join_date' => ['required'],
+            'job_type' => ['required'],
+            'city' => ['required'],
+            'age' => ['required'],
         ]);
     }
 
@@ -65,9 +75,32 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'username' => $data['username'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'role' => 'employee',
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'status' => '2',
+            'phone' => $data['phone'],
+            'address' => $data['address'],
+            'gender' => $data['gender'],
+            'dob' => $data['dob'],
+            'join_date' => $data['join_date'],
+            'job_type' => $data['job_type'],
+            'city' => $data['city'],
+            'age' => $data['age'],
         ]);
+    }
+
+    protected function registered(Request $request, User $user)
+    {
+        if ($user->hasRole('admin')) {
+            return redirect('/dashboard');
+        } elseif ($user->hasRole('employee')) {
+            return redirect('/employee');
+        } else {
+            return redirect(RouteServiceProvider::HOME);
+        }
     }
 }

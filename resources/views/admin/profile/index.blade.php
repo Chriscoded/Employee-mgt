@@ -126,17 +126,17 @@
                                         <tr>
                                             <td style="width: 10px" class="text-center"><i class="fa fa-universal-access"></i></td>
                                             <td><strong>Bank Name</strong></td>
-                                            <td>Nepal investment bank</td>
+                                            <td>First Bank</td>
                                         </tr>
                                         <tr>
                                             <td style="width: 10px" class="text-center"><i class="fa fa-accessible-icon"></i></td>
                                             <td><strong>Bank Branch</strong></td>
-                                            <td>Butwal</td>
+                                            <td>Abuja</td>
                                         </tr>
                                         <tr>
                                             <td style="width: 10px" class="text-center"><i class="fa fa-code"></i></td>
-                                            <td><strong>Ifsc Code</strong></td>
-                                            <td>54675</td>
+                                            <td><strong>Sort Code</strong></td>
+                                            <td>5467556</td>
                                         </tr>
                                         </tbody>
                                     </table>

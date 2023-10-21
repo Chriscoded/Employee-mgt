@@ -8,7 +8,7 @@ class Salary extends Model
 {
     public function users()
     {
-        return $this->belongsTo('App\User', 'employee_id');
+        return $this->belongsTo('App\Models\User', 'employee_id');
     }
 
     public function scopeAdvance($query)

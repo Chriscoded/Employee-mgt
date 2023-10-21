@@ -43,7 +43,7 @@ class User extends Authenticatable
 //    For counting the leave
     public function leave()
     {
-        return $this->HasMAny('App\Leave','employee_id');
+        return $this->HasMAny('App\Models\Leave','employee_id');
     }
 
     public function get_UserNumber(){

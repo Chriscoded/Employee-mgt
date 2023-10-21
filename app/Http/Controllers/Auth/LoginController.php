@@ -19,7 +19,9 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers;
+    use AuthenticatesUsers, CustomRedirectsUsers {
+        CustomRedirectsUsers::customRedirectPath insteadof AuthenticatesUsers;
+    }
 
     /**
      * Where to redirect users after login.

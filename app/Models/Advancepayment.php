@@ -8,6 +8,6 @@ class Advancepayment extends Model
 {
     public function employees()
     {
-        return $this->belongsTo('App\User', 'employee_id');
+        return $this->belongsTo('App\Models\User', 'employee_id');
     }
 }

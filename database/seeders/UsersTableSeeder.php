@@ -25,12 +25,12 @@ class UsersTableSeeder extends Seeder
                 'password' => bcrypt('admin123'),
                 'status' => '1',
                 'phone' => '9866567794',
-                'address' => 'butwal',
+                'address' => 'Abuja',
                 'gender' => 'male',
                 'dob' => '2019-03-12',
                 'join_date' => '2019-03-12',
                 'job_type' => 'sales',
-                'city' => 'butwal',
+                'city' => 'Abuja',
                 'age' => '23',
             ]);
             User::create(
@@ -45,12 +45,12 @@ class UsersTableSeeder extends Seeder
                 'password' => bcrypt('employee123'),
                 'status' => '1',
                 'phone' => '986133131',
-                'address' => 'butwal',
+                'address' => 'Lagos',
                 'gender' => 'male',
                 'dob' => '2019-03-12',
                 'join_date' => '2019-03-12',
                 'job_type' => 'IT',
-                'city' => 'butwal',
+                'city' => 'Lagos',
                 'age' => '22',
             ]);
 
